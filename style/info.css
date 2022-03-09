@@ -1,0 +1,73 @@
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pesquisa {
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+/* first section*/
+
+.player{
+    display: flex;
+    position: fixed;
+    z-index: 0;
+}
+
+.player > iframe{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*second section*/
+
+.movie-info {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    height:400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
